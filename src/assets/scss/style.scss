@@ -1,5 +1,48 @@
+//@import
+@import "./blocks/var";
+@import "./blocks/header";
+@import "./blocks/container";
+@import "./blocks/nav";
+@import "./blocks/main";
+@import "./blocks/sidebar";
+@import "./blocks/inner";
+@import "./blocks/search";
+@import "./blocks/post";
+@import "./blocks/btn";
+@import "./blocks/footer";
+@import "./blocks/media";
 body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
+    margin: 0;
+    background-color: $bodyBackColor;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Newsreader', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $colorMainText;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: $colorMainText;
+    text-decoration: none;
+    padding: 0;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: border-box;
 }

@@ -1,0 +1,12 @@
+.main {
+    background-color: $colorBackPost;
+    border: 1px solid $colorBorder;
+    box-shadow: 0 5px 5px rgb(97, 96, 96);
+    padding: 5px 0 5px 5px;
+}
+
+.main__grid {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    grid-template-rows: 110px 50px 1fr;
+}

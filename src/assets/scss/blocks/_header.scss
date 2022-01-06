@@ -1,0 +1,109 @@
+.header {
+    background-color: $headerBackColor;
+}
+
+.header__burger {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 20px;
+    .header__Burglog {
+        max-width: 30px;
+        fill: white;
+        position: relative;
+        &:hover {
+            fill: orange;
+            transition: .2s linear;
+        }
+    }
+}
+
+.header__list {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: -10px;
+    z-index: 1;
+    margin-left: 10px;
+    background-color: $headerBackColor;
+    padding: 30px 70px;
+    li {
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+}
+
+.Disp {
+    display: block;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-left: 30px;
+    a {
+        img {
+            &:hover {
+                transform: rotateY(360deg);
+                transition: 2s ease-in-out;
+            }
+        }
+    }
+}
+
+.header__account {
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        gap: 35px;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            a {
+                color: $colorTextSecondary;
+                font-size: 16px;
+                line-height: 1.2;
+                &:hover {
+                    text-decoration: underline;
+                    color: white;
+                    transition: .2s linear;
+                }
+                svg {
+                    display: flex;
+                    align-items: center;
+                    fill: #727989;
+                    stroke: #727989;
+                    &:hover {
+                        fill: orange;
+                        transition: .2s linear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__mail {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+.header__img {
+    img {
+        display: block;
+        max-width: 35px;
+        border-radius: 5px;
+    }
+}

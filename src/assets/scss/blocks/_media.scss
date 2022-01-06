@@ -1,0 +1,18 @@
+.display {
+    display: none;
+}
+
+@media(max-width: 625px) {
+    .main__grid {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: none;
+    }
+    .media {
+        display: none;
+    }
+    .display {
+        display: flex;
+    }
+}

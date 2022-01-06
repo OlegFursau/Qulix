@@ -1,0 +1,35 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 40px;
+    grid-column: 1/2;
+    grid-row: 1/8;
+    border-right: 1px solid $colorBorder;
+}
+
+.sidebar__submenu {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Newsreader', serif;
+    padding-left: 28px;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .sidebar__link {
+        display: block;
+        padding-left: 28px;
+        color: $colorLink;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+            border-left: 3px solid $colorLink;
+            color: black;
+            transform: translateX(-10px);
+            transition: .2s ease-in;
+        }
+    }
+}
